@@ -7,6 +7,7 @@ Antes de comenzar, por favor revisa el siguiente video de YouTube que proporcion
 ## Tecnologías Utilizadas
 
 - **React JS**
+- **Bootstrap**
 - **Next JS**
 - **SQL Server**
 
@@ -27,11 +28,11 @@ v14.2.3
 ## Pasos para Reproducir el Ejercicio
 
 - Descargar el Código:
-        Clona el repositorio desde [enlace del repositorio].
+        [Clona el repositorio](https://github.com/myrepo-aw/innovations.git)
 
 - Configurar el Entorno:
         Monta la máquina virtual Docker si es necesario.
-        Carga el script SQL en Azure Data Studio para SQL Server.
+        Descarga el archivo innovations/Innovations.bak y carga el script SQL en Azure Data Studio para SQL Server.
 
 - Instalar Dependencias:
         Navega al directorio del proyecto y ejecuta npm install para instalar las dependencias.
@@ -49,3 +50,12 @@ v14.2.3
 
 - Optimización de Componentes:
         Los componentes principales Goals.jsx y Tasks.jsx pueden ser refactorizados en subcomponentes para gestionar de manera más eficiente las llamadas a la API.
+
+- Optimización de las llamadas API:
+        Los fallbacks pueden ser optimizados de una mejor manera al hacerlos reutilizables entre componentes, actualmente quedó un poco repetitivo
+
+## comentarios finales
+
+Al ejercicio le faltaron un par de funcionalidades, entre ellas poder fijar la prioridad con las estrellas, la edición del nombre de las tareas y filtrar el imput para que no se repita el nombre, tuve otras actividades en el transcurso de las 24 horas que se me dieron como límite y no me dio tiempo de terminar el ejercicio, espero no sea un problema.
+
+GRACIAS :)
