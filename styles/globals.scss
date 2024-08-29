@@ -1,0 +1,62 @@
+@import "variables";
+
+/* GLOBALS */
+html, body{
+  background-color: #e4e4e4 !important;
+}
+
+/* GOALS */
+.my-navbar{
+  padding: 15px 10px;
+  background-color: white;
+  border-left: 5px solid $color-primary;
+}
+
+/* GOALS */
+.goals{
+  padding: 15px 10px;
+  background-color: white;
+}
+
+.my-button {
+  background-color: $color-primary;
+  border: none;
+  &:hover{
+    background-color: darken($color-primary, 10%);
+  }
+  &:focus{
+    background-color: darken($color-primary, 10%) !important;
+  }
+}
+
+.my-button-unabled {
+  background-color: gray !important;
+  border: none;
+  cursor: not-allowed !important;
+  &:hover{
+    background-color: gray;
+  }
+  &:focus{
+    background-color: gray !important;
+  }
+}
+
+/* Custom styles for the button */
+.custom-button {
+  background-color: #ff5100; /* Your custom background color */
+  border: none; /* Remove border */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Padding */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+}
+
+/* Custom styles for the icon */
+.custom-icon {
+  font-size: 24px; /* Icon size */
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.clickeable{
+  cursor: pointer;
+}

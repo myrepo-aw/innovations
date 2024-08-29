@@ -1,40 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ejercicio de Desarrollo - README
 
-## Getting Started
+Antes de comenzar, por favor revisa el siguiente video de YouTube que proporciona evidencia del ejercicio en caso de que no sea posible reproducir el programa y el script:
 
-First, run the development server:
+[Video de Evidencia](https://youtu.be/Mhv8EMx6YHY)
+
+## Tecnologías Utilizadas
+
+- **React JS**
+- **Next JS**
+- **SQL Server**
+
+## Versiones
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm -v
+10.7.0
+
+node -v
+v21.7.1
+
+next -v 
+v14.2.3
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Pasos para Reproducir el Ejercicio
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Descargar el Código:
+        Clona el repositorio desde [enlace del repositorio].
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Configurar el Entorno:
+        Monta la máquina virtual Docker si es necesario.
+        Carga el script SQL en Azure Data Studio para SQL Server.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Instalar Dependencias:
+        Navega al directorio del proyecto y ejecuta npm install para instalar las dependencias.
 
-## Learn More
+- Ejecutar el Proyecto:
+        Inicia el servidor de desarrollo con npm run dev.
 
-To learn more about Next.js, take a look at the following resources:
+- Probar la Aplicación:
+        Accede a la aplicación en [localhost] y realiza las pruebas necesarias.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Posibles Mejoras
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Estado Global:
+        Considerar la implementación de un estado global para mejorar la comunicación entre componentes. Actualmente, las metas y tareas se comunican a través de props.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Optimización de Componentes:
+        Los componentes principales Goals.jsx y Tasks.jsx pueden ser refactorizados en subcomponentes para gestionar de manera más eficiente las llamadas a la API.
