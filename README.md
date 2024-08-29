@@ -16,8 +16,8 @@ Este documento detalla las instrucciones para reproducir y evaluar el ejercicio 
 ## Versiones Utilizadas
 
 - **npm:** 10.7.0
-- **node:**v21.7.1
-- **next:**v14.2.3
+- **node:** v21.7.1
+- **next:** v14.2.3
 
 
 ## Instrucciones para Reproducir el Ejercicio
