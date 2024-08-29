@@ -1,6 +1,8 @@
 # Ejercicio de Desarrollo - README
 
-Antes de comenzar, por favor revisa el siguiente video de YouTube que proporciona evidencia del ejercicio en caso de que no sea posible reproducir el programa y el script:
+## Descripción
+
+Este documento detalla las instrucciones para reproducir y evaluar el ejercicio de desarrollo presentado. En caso de que no sea posible ejecutar el programa o el script, se ha incluido un enlace a un video de YouTube que demuestra la funcionalidad del ejercicio.
 
 [Video de Evidencia](https://youtu.be/Mhv8EMx6YHY)
 
@@ -11,51 +13,57 @@ Antes de comenzar, por favor revisa el siguiente video de YouTube que proporcion
 - **Next JS**
 - **SQL Server**
 
-## Versiones
+## Versiones Utilizadas
 
-```bash
-npm -v
-10.7.0
+- **npm: **10.7.0
+- **node: **v21.7.1
+- **next: **v14.2.3
 
-node -v
-v21.7.1
 
-next -v 
-v14.2.3
+## Instrucciones para Reproducir el Ejercicio
+
+1. Clona el repositorio en tu máquina local utilizando el siguiente comando:
+
+```Bash
+git clone <URL_DEL_REPOSITORIO>
 ```
 
+2. Configuración del Entorno:
+- Si es necesario, monta la máquina virtual utilizando Docker.
+- Descarga el archivo innovations/Innovations.bak y carga el script SQL correspondiente en Azure Data Studio para configurar la base de datos en SQL Server.
 
-## Pasos para Reproducir el Ejercicio
+3. Instalación de Dependencias:
 
-- Descargar el Código:
-        [Clona el repositorio](https://github.com/myrepo-aw/innovations.git)
+- Navega al directorio del proyecto y ejecuta el siguiente comando para instalar todas las dependencias necesarias:
 
-- Configurar el Entorno:
-        Monta la máquina virtual Docker si es necesario.
-        Descarga el archivo innovations/Innovations.bak y carga el script SQL en Azure Data Studio para SQL Server.
+```Bash
+npm install
+```
 
-- Instalar Dependencias:
-        Navega al directorio del proyecto y ejecuta npm install para instalar las dependencias.
-
-- Ejecutar el Proyecto:
-        Inicia el servidor de desarrollo con npm run dev.
-
-- Probar la Aplicación:
-        Accede a la aplicación en [localhost] y realiza las pruebas necesarias.
-
+4. Ejecución del Proyecto:
+- Inicia el servidor de desarrollo con el siguiente comando:
+```Bash
+npm run dev
+```
 ## Posibles Mejoras
 
-- Estado Global:
-        Considerar la implementación de un estado global para mejorar la comunicación entre componentes. Actualmente, las metas y tareas se comunican a través de props.
+1. Estado Global:
+        Implementar un estado global para optimizar la comunicación entre componentes. Actualmente, la comunicación entre las metas y tareas se realiza a través de props, lo cual podría ser mejorado.
 
-- Optimización de Componentes:
-        Los componentes principales Goals.jsx y Tasks.jsx pueden ser refactorizados en subcomponentes para gestionar de manera más eficiente las llamadas a la API.
+2. Refactorización de Componentes:
+        Dividir los componentes principales (Goals.jsx y Tasks.jsx) en subcomponentes más pequeños para gestionar de manera más eficiente las llamadas a la API y mejorar la legibilidad del código.
 
-- Optimización de las llamadas API:
-        Los fallbacks pueden ser optimizados de una mejor manera al hacerlos reutilizables entre componentes, actualmente quedó un poco repetitivo
+3. Optimización de las Llamadas a la API:
+        Refactorizar los fallbacks para hacerlos reutilizables entre diferentes componentes, evitando la repetición de código.
 
-## comentarios finales
+## Comentarios Finales
 
-Al ejercicio le faltaron un par de funcionalidades, entre ellas poder fijar la prioridad con las estrellas, la edición del nombre de las tareas y filtrar el imput para que no se repita el nombre, tuve otras actividades en el transcurso de las 24 horas que se me dieron como límite y no me dio tiempo de terminar el ejercicio, espero no sea un problema.
+Al ejercicio le faltaron algunas funcionalidades, incluyendo:
+
+- Asignación de prioridad a través de estrellas.
+- Edición del nombre de las tareas.
+- Validación para evitar la repetición en nombres.
+
+Debido a otras responsabilidades durante el plazo de 24 horas proporcionado, no fue posible completar estas funcionalidades. Agradezco la comprensión.
 
 GRACIAS :)
