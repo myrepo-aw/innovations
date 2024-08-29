@@ -31,6 +31,7 @@ git clone <URL_DEL_REPOSITORIO>
 2. Configuración del Entorno:
 - Si es necesario, monta la máquina virtual utilizando Docker.
 - Descarga el archivo innovations/Innovations.bak y carga el script SQL correspondiente en Azure Data Studio para configurar la base de datos en SQL Server.
+- Ve a  *innovations/lib/db.js* y actualiza las credenciales de tu entorno.
 
 3. Instalación de Dependencias:
 
@@ -55,6 +56,8 @@ npm run dev
 
 3. Optimización de las Llamadas a la API:
         Refactorizar los fallbacks para hacerlos reutilizables entre diferentes componentes, evitando la repetición de código.
+
+4. Crear un archivo de variables de entorno .ENV para tener mayor seguridad en las credenciales de conexión.
 
 ## Comentarios Finales
 
